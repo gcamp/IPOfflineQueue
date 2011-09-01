@@ -268,7 +268,9 @@ static NSMutableDictionary *_activeQueues = nil;
             application.applicationState == UIApplicationStateBackground
         )
     ) {
-		backgroundTaskIdentifier = [application beginBackgroundTaskWithExpirationHandler:^{ }];
+		backgroundTaskIdentifier = [application beginBackgroundTaskWithExpirationHandler:^{ 
+            if (backgroundTaskIdentifier != UIBackgroundTaskInvalid) [application endBackgroundTask:backgroundTaskIdentifier];
+        }];
     }
     
     dispatch_sync(insertQueue, ^{ });
@@ -334,7 +336,9 @@ static NSMutableDictionary *_activeQueues = nil;
     while (! halt) {    
         NSAutoreleasePool *loopPool = [[NSAutoreleasePool alloc] init];
 
-        if (canMultitask) backgroundTaskIdentifier = [application beginBackgroundTaskWithExpirationHandler:^{ }];
+        if (canMultitask) backgroundTaskIdentifier = [application beginBackgroundTaskWithExpirationHandler:^{ 
+            if (backgroundTaskIdentifier != UIBackgroundTaskInvalid) [application endBackgroundTask:backgroundTaskIdentifier];
+        }];
 
         [updateThreadPausedLock lockWhenCondition:0];
         if (halt) {
