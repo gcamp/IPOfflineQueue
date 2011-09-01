@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A96B0DB3140D4E71007750B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A96B0DB2140D4E71007750B9 /* UIKit.framework */; };
+		A96B0DB5140D4E71007750B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A96B0DB4140D4E71007750B9 /* Foundation.framework */; };
+		A96B0DBD140D4E71007750B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A96B0DBC140D4E71007750B9 /* main.m */; };
+		A96B0DC1140D4E71007750B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A96B0DC0140D4E71007750B9 /* AppDelegate.m */; };
+		A96B0DC4140D4E71007750B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96B0DC3140D4E71007750B9 /* ViewController.m */; };
+		A96B0DC7140D4E71007750B9 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96B0DC5140D4E71007750B9 /* ViewController.xib */; };
+		A96B0DD8140DB789007750B9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A96B0DD7140DB789007750B9 /* libsqlite3.dylib */; };
+		A9B7B8E9140F3891009B3223 /* IPOfflineQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B7B8E8140F3891009B3223 /* IPOfflineQueue.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A96B0DAE140D4E70007750B9 /* OfflineQueueTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfflineQueueTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A96B0DB2140D4E71007750B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A96B0DB4140D4E71007750B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A96B0DB8140D4E71007750B9 /* OfflineQueueTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OfflineQueueTest-Info.plist"; sourceTree = "<group>"; };
+		A96B0DBC140D4E71007750B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A96B0DBE140D4E71007750B9 /* OfflineQueueTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OfflineQueueTest-Prefix.pch"; sourceTree = "<group>"; };
+		A96B0DBF140D4E71007750B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A96B0DC0140D4E71007750B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A96B0DC2140D4E71007750B9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A96B0DC3140D4E71007750B9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A96B0DC6140D4E71007750B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		A96B0DD7140DB789007750B9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		A9B7B8E7140F3891009B3223 /* IPOfflineQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPOfflineQueue.h; path = ../IPOfflineQueue.h; sourceTree = "<group>"; };
+		A9B7B8E8140F3891009B3223 /* IPOfflineQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IPOfflineQueue.m; path = ../IPOfflineQueue.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A96B0DAB140D4E70007750B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96B0DD8140DB789007750B9 /* libsqlite3.dylib in Frameworks */,
+				A96B0DB3140D4E71007750B9 /* UIKit.framework in Frameworks */,
+				A96B0DB5140D4E71007750B9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A96B0DA3140D4E70007750B9 = {
+			isa = PBXGroup;
+			children = (
+				A96B0DCD140D4E7D007750B9 /* IPOfflineQueue */,
+				A96B0DB6140D4E71007750B9 /* OfflineQueueTest */,
+				A96B0DB1140D4E70007750B9 /* Frameworks */,
+				A96B0DAF140D4E70007750B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A96B0DAF140D4E70007750B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A96B0DAE140D4E70007750B9 /* OfflineQueueTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A96B0DB1140D4E70007750B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A96B0DD7140DB789007750B9 /* libsqlite3.dylib */,
+				A96B0DB2140D4E71007750B9 /* UIKit.framework */,
+				A96B0DB4140D4E71007750B9 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A96B0DB6140D4E71007750B9 /* OfflineQueueTest */ = {
+			isa = PBXGroup;
+			children = (
+				A96B0DBF140D4E71007750B9 /* AppDelegate.h */,
+				A96B0DC0140D4E71007750B9 /* AppDelegate.m */,
+				A96B0DC2140D4E71007750B9 /* ViewController.h */,
+				A96B0DC3140D4E71007750B9 /* ViewController.m */,
+				A96B0DC5140D4E71007750B9 /* ViewController.xib */,
+				A96B0DB7140D4E71007750B9 /* Supporting Files */,
+			);
+			path = OfflineQueueTest;
+			sourceTree = "<group>";
+		};
+		A96B0DB7140D4E71007750B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A96B0DB8140D4E71007750B9 /* OfflineQueueTest-Info.plist */,
+				A96B0DBC140D4E71007750B9 /* main.m */,
+				A96B0DBE140D4E71007750B9 /* OfflineQueueTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A96B0DCD140D4E7D007750B9 /* IPOfflineQueue */ = {
+			isa = PBXGroup;
+			children = (
+				A9B7B8E7140F3891009B3223 /* IPOfflineQueue.h */,
+				A9B7B8E8140F3891009B3223 /* IPOfflineQueue.m */,
+			);
+			name = IPOfflineQueue;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A96B0DAD140D4E70007750B9 /* OfflineQueueTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A96B0DCA140D4E71007750B9 /* Build configuration list for PBXNativeTarget "OfflineQueueTest" */;
+			buildPhases = (
+				A96B0DAA140D4E70007750B9 /* Sources */,
+				A96B0DAB140D4E70007750B9 /* Frameworks */,
+				A96B0DAC140D4E70007750B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OfflineQueueTest;
+			productName = OfflineQueueTest;
+			productReference = A96B0DAE140D4E70007750B9 /* OfflineQueueTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A96B0DA5140D4E70007750B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = A96B0DA8140D4E70007750B9 /* Build configuration list for PBXProject "OfflineQueueTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A96B0DA3140D4E70007750B9;
+			productRefGroup = A96B0DAF140D4E70007750B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A96B0DAD140D4E70007750B9 /* OfflineQueueTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A96B0DAC140D4E70007750B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96B0DC7140D4E71007750B9 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A96B0DAA140D4E70007750B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96B0DBD140D4E71007750B9 /* main.m in Sources */,
+				A96B0DC1140D4E71007750B9 /* AppDelegate.m in Sources */,
+				A96B0DC4140D4E71007750B9 /* ViewController.m in Sources */,
+				A9B7B8E9140F3891009B3223 /* IPOfflineQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A96B0DC5140D4E71007750B9 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A96B0DC6140D4E71007750B9 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A96B0DC8140D4E71007750B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A96B0DC9140D4E71007750B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A96B0DCB140D4E71007750B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OfflineQueueTest/OfflineQueueTest-Prefix.pch";
+				INFOPLIST_FILE = "OfflineQueueTest/OfflineQueueTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A96B0DCC140D4E71007750B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OfflineQueueTest/OfflineQueueTest-Prefix.pch";
+				INFOPLIST_FILE = "OfflineQueueTest/OfflineQueueTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A96B0DA8140D4E70007750B9 /* Build configuration list for PBXProject "OfflineQueueTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A96B0DC8140D4E71007750B9 /* Debug */,
+				A96B0DC9140D4E71007750B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A96B0DCA140D4E71007750B9 /* Build configuration list for PBXNativeTarget "OfflineQueueTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A96B0DCB140D4E71007750B9 /* Debug */,
+				A96B0DCC140D4E71007750B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A96B0DA5140D4E70007750B9 /* Project object */;
+}
