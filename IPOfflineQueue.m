@@ -431,21 +431,13 @@ static NSMutableDictionary *_activeQueues = nil;
         if (halted) return;
         halted = YES;
 
-        if ([NSThread isMainThread]) {
+        dispatch_sync(dispatch_get_main_queue(), ^{
             if (autoResumeTimer) {
                 [autoResumeTimer invalidate];
                 [autoResumeTimer release];
                 autoResumeTimer = nil;
-            }    
-        } else {
-            dispatch_sync(dispatch_get_main_queue(), ^{
-                if (autoResumeTimer) {
-                    [autoResumeTimer invalidate];
-                    [autoResumeTimer release];
-                    autoResumeTimer = nil;
-                }
-            });
-        }
+             }
+        });
     }
     
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillTerminateNotification object:nil];    
